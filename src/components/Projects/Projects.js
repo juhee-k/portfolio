@@ -9,7 +9,10 @@ import ProjectBox from "./ui-components/projectBox/projectBox";
 import project1 from "../../assets/project001.png";
 import project2 from "../../assets/project002.png";
 import project3 from "../../assets/project003.png";
+import image from "../../assets/image.png";
+import image3 from "../../assets/image3.png";
 import image4 from "../../assets/image4.png";
+import image8 from "../../assets/image8.png";
 import image10 from "../../assets/image10.png";
 import image13 from "../../assets/image13.png";
 
@@ -52,10 +55,10 @@ class Portfolio extends React.Component {
         },
         {
           id: "5",
-          preview: image13,
-          title: "Restaurant Web Sites Portfolio",
-          tag: "Online Ordering Integration",
-          url: "https://www.hellocds.com/",
+          preview: image3,
+          title: "Maple Hills Website",
+          tag: "Wix",
+          url: "https://www.maplehillsusa.com/",
         },
         {
           id: "6",
@@ -63,6 +66,27 @@ class Portfolio extends React.Component {
           title: "CDS Brochure",
           tag: "2015 Brochure",
           url: "https://drive.google.com/file/d/1VQSLMGrQp8zL_3fymLpX2AP7dmJBMEJ6/view?usp=sharing",
+        },
+        {
+          id: "7",
+          preview: image,
+          title: "Seattle Prime Capital Website",
+          tag: "Duda",
+          url: "https://www.seattleprimecapital.com/",
+        },
+        {
+          id: "8",
+          preview: image13,
+          title: "Restaurant Web Sites Portfolio",
+          tag: "Online Ordering Integration",
+          url: "https://www.hellocds.com/",
+        },
+        {
+          id: "9",
+          preview: image8,
+          title: "EMV Brochure",
+          tag: "2015 EMV Brochure",
+          url: "https://drive.google.com/file/d/1j9Bj7WJrbjFD2SreaDwNILYKXVPe1zXG/view?usp=sharing",
         }
       ],
       filterResult: null,
