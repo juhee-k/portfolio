@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Container, Grid } from '@material-ui/core';
 import Title from '../Title/Title';
 import Fade from 'react-reveal/Fade';
@@ -26,37 +26,43 @@ class Portfolio extends React.Component {
           id: "1",
           preview: project1,
           title: "COWABUNGA",
-          tag: "surfing weather API",
+          tag: "Surfing weather API",
+          url: "https://fudoggy.github.io/project1/",
         },
         {
           id: "2",
           preview: project2,
           title: "Babble Chat",
-          tag: "socket.io",
+          tag: "socket.io & node.js",
+          url: "https://young-caverns-90463.herokuapp.com/",
         },
         {
           id: "3",
           preview: project3,
           title: "Music eXchange",
-          tag: "Marketplace for Musicians",
+          tag: "React.js & Paypal Sandbox",
+          url: "https://arcane-everglades-49918.herokuapp.com/",
         },
         {
           id: "4",
           preview: image4,
           title: "CDS Website",
           tag: "Wordpress",
+          url: "https://cdsus.com/",
         },
         {
           id: "5",
           preview: image13,
           title: "Restaurant Web Sites Portfolio",
           tag: "Online Ordering Integration",
+          url: "https://www.hellocds.com/",
         },
         {
           id: "6",
           preview: image10,
           title: "CDS Brochure",
-          tag: "Brochure",
+          tag: "2015 Brochure",
+          url: "https://drive.google.com/file/d/1VQSLMGrQp8zL_3fymLpX2AP7dmJBMEJ6/view?usp=sharing",
         }
       ],
       filterResult: null,
@@ -100,7 +106,7 @@ class Portfolio extends React.Component {
     let projectsRender = null;
     if (this.state.filterResult) {
       projectsRender = this.state.filterResult.map((project) => (
-        <ProjectBox preview={project.preview} key={project.id} title={project.title} tag={project.tag} />
+        <ProjectBox preview={project.preview} key={project.id} title={project.title} tag={project.tag} url={project.url}/>
       ));
     }
     // PORTFOLIO GALLERY BREAKPOINTS
@@ -110,20 +116,6 @@ class Portfolio extends React.Component {
       700: 2,
       500: 1,
     };
-
-    // const [isDesktop, setIsDesktop] = useState(false);
-    // const [isMobile, setIsMobile] = useState(false);
-  
-    // useEffect(() => {
-    //   if (window.innerWidth > 769) {
-    //     setIsDesktop(true);
-    //     setIsMobile(false);
-    //   } else {
-    //     setIsMobile(true);
-    //     setIsDesktop(false);
-    //   }
-    // }, []);
-
 
     return (
       <div id="portfolio">
